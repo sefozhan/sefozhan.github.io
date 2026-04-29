@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesailerim - Mesaini Takip Et, Kazancını Büyüt!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-green: #28a745;
+            --dark-bg: #0b110d;
+            --card-bg: #151d16;
+            --text-light: #e0e0e0;
+            --accent-green: #39ff14;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--dark-bg);
+            color: var(--text-light);
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 80px 20px;
+            text-align: center;
+            background: radial-gradient(circle at top, #1a3a20 0%, var(--dark-bg) 70%);
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .hero span {
+            color: var(--accent-green);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: var(--primary-green);
+            color: white;
+            padding: 15px 35px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: transform 0.3s;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.05);
+            background: #218838;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .feature-card {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 15px;
+            border-bottom: 3px solid var(--primary-green);
+            text-align: center;
+        }
+
+        .feature-card i {
+            font-size: 40px;
+            color: var(--accent-green);
+            margin-bottom: 20px;
+        }
+
+        .feature-card h3 {
+            margin-bottom: 15px;
+        }
+
+        /* Mockup Section */
+        .mockups {
+            background: #050806;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .mockup-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .mockup-grid img {
+            width: 280px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            transition: transform 0.3s;
+        }
+
+        .mockup-grid img:hover {
+            transform: translateY(-10px);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            border-top: 1px solid #222;
+        }
+
+        .google-play {
+            width: 200px;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <h1>PARANI KONTROL ET<br><span>GELİRİNİ BÜYÜT!</span></h1>
+        <p>Mesailerini anında kaydet, kazancını gerçek zamanlı takip et ve bütçeni profesyonelce yönet.</p>
+        <a href="#" class="cta-button">Hemen İndir - Google Play</a>
+    </header>
+
+    <section class="features">
+        <div class="feature-card">
+            <i class="fas fa-calendar-alt"></i>
+            <h3>Mesai Girişi</h3>
+            <p>Günlük, haftalık veya aylık mesai kayıtlarını akıllı takvim üzerinden saniyeler içinde oluşturun.</p>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-chart-pie"></i>
+            <h3>Gelir & Gider Yönetimi</h3>
+            <p>Harcamalarınızı kategorize edin, gereksiz giderleri tespit ederek tasarruf hedeflerinize ulaşın.</p>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-calculator"></i>
+            <h3>Esnek Hesaplama</h3>
+            <p>Mesai katsayılarını (Hafta sonu, Bayram, Gece) kendinize göre özelleştirin, net kazancınızı görün.</p>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-sync"></i>
+            <h3>Senkronize & Güvenli</h3>
+            <p>Verileriniz bulutta güvenle saklanır, tüm cihazlarınızdan erişim sağlayabilirsiniz.</p>
+        </div>
+    </section>
+
+    <section class="mockups">
+        <h2>Uygulamadan Ekran Görüntüleri</h2>
+        <div class="mockup-grid">
+            <img src="BANNER.jpg" alt="Ana Ekran">
+            <img src="ChatGPT Image 21 Nis 2026 16_15_27.jpg" alt="Mesai Girişi">
+            <img src="ChatGPT Image 21 Nis 2026 16_20_18.jpg" alt="Ayarlar">
+            <img src="ChatGPT Image 21 Nis 2026 16_09_31.jpg" alt="Tatil Takvimi">
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Yuki Yazılım. Tüm hakları saklıdır.</p>
+        <p>Mesailerim ile zamanını yönet, kazancını artır.</p>
+        <a href="#"><img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" class="google-play"></a>
+    </footer>
+
+</body>
+</html>
